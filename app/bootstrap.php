@@ -67,51 +67,12 @@ if ($f3->get('db.driver') == 'sqlite') {
 \Registry::set('db', $db);
 
 
-// setup outgoing email server for php mail command
-ini_set("SMTP", $f3->get('email.host'));
-ini_set('sendmail_from', $f3->get('email.from'));
-
-
-// command line does not have SESSIONs so can't use SESSION notifications
-// setup user notifications
-// @see https://github.com/needim/noty for a library to present the messages
-$notifications = $f3->get('session.notifications');
-if (!$f3->exists('SESSION.notifications')) {
-    $f3->set('SESSION.notifications', array(
-        'alert' => array(),
-        'error' => array(),
-        'warning' => array(),
-        'success' => array(),
-        'information' => array(),
-        'confirmation' => array(),
-    ));
-}
-// add messages like this with $f3->push('SESSION.notifications.error', 'error messages');
-
-// documentation route
-$f3->route('GET /documentation/@page',function($f3, $params){
-    $filename = 'doc/' . strtoupper($params['page']) . '.md';
-    echo \View::instance()->render('views/header.phtml');
-    if (!file_exists($filename)) {
-        echo '<h1>Documentation Error</h1><p>No such document exists!</p>';
-        $f3->status(404);
-    } else {
-        echo \Markdown::instance()->convert($f3->read($filename));
-    }
-    echo \View::instance()->render('views/footer.phtml');
-});
-
 // setup routes
 // @see http://fatfreeframework.com/routing-engine
 // firstly load routes from ini file
 $f3->config('config/routes.ini');
 
 $f3->run();
-
-// clear the SESSION messages unless 'keep_notifications' is not false
-if ($f3->get('keep_notifications') === false) {
-    $f3->set('SESSION.notifications', null);
-}
 
 // log script execution time if debugging
 if ($debug || $f3->get('application.environment') == 'development') {
