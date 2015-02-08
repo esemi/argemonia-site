@@ -11,3 +11,4 @@ tmp/sessions
 tmp/uploads
 logs
 /vendor/
+/nbproject/private/
