@@ -1,6 +1,6 @@
 /* 
     Created on : 08.02.2015, 15:08:13
-    Author     : Ð˜Ñ€Ð¸Ð½Ð°
+    Author     : Èðèíà
 */
 
 /* FONTS */
@@ -23,81 +23,6 @@
     font-weight: bold;
     font-style: normal;
 }
-
-
-
-@font-face {
-    font-family: 'aleksandracregular';
-    src: url('../fonts/aleksandrac_regular.eot');
-    src: url('../fonts/aleksandrac_regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/aleksandrac_regular.woff') format('woff'),
-         url('../fonts/aleksandrac_regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'caviar_dreams_bold';
-    src: url('../fonts/caviar_dreams_bold.eot');
-    src: url('../fonts/caviar_dreams_bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/caviar_dreams_bold.woff') format('woff'),
-         url('../fonts/caviar_dreams_bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'caviardreams';
-    src: url('../fonts/caviardreams.eot');
-    src: url('../fonts/caviardreams.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/caviardreams.woff') format('woff'),
-         url('../fonts/caviardreams.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'caviardreams_bolditalic';
-    src: url('../fonts/caviardreams_bolditalic.eot');
-    src: url('../fonts/caviardreams_bolditalic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/caviardreams_bolditalic.woff') format('woff'),
-         url('../fonts/caviardreams_bolditalic.ttf') format('truetype');
-    font-weight: bold;
-}
-
-
-@font-face {
-    font-family: 'caviardreams_italic';
-    src: url('../fonts/caviardreams_italic.eot');
-    src: url('../fonts/caviardreams_italic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/caviardreams_italic.woff') format('woff'),
-         url('../fonts/caviardreams_italic.ttf') format('truetype');
-    font-weight: normal;
-}
-
-
-
-@font-face {
-    font-family: 'cleanveb';
-    src: url('../fonts/cleanveb.eot');
-    src: url('../fonts/cleanveb.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/cleanveb.woff') format('woff'),
-         url('../fonts/cleanveb.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cleanvel';
-    src: url('../fonts/cleanvel.eot');
-    src: url('../fonts/cleanvel.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/cleanvel.woff') format('woff'),
-         url('../fonts/cleanvel.ttf') format('truetype');
-}
-
-
 
 @font-face {
     font-family: 'FontinSansCRBold';
