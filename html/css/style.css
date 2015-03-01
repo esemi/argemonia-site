@@ -97,8 +97,9 @@ html {
     width: 100%;
     height: 100%;
     
-     font-family: verdana, sans-serif;
+    font-family: verdana, sans-serif;
     
+    color: #efeed9;
 }
 
 html { background: url('../img/fon.png') repeat; }
@@ -108,27 +109,25 @@ body { background: url('../img/fon2.png') repeat; }
 
 
 /* common view */
-p {
-    
-    color: ivory;
-    
-}
 
 /* / common view */
+
+/* LAYOUT
+*/
 
 .content {
     position: relative;
 
-    width: 910px;
+    box-sizing: border-box;
+    width: 995px;
     height: 100%;
     padding: 0 20px; 
     margin: 0 auto;
 }
 
 .content {    
-    background-image: url('../img/houses.png');
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    background: url('../img/houses.png')no-repeat right bottom,
+        url('../img/logo1.png')no-repeat left top;
 }
 
 /* header 
@@ -137,10 +136,78 @@ p {
      position: relative;
      
      display: block;
-     height: 209px;
+     height: 218px;
     }
+
+    .logo {
+    position: absolute;
+    top: 35px;
+    right: 0;
+
+    display: block;
+    width: 568px;
+    }
+    
+    /* concert */
+        .nearest-concert {
+            position: absolute;
+            top: 85px;
+
+            width: 360px;
+            height: 125px;
+            
+            font-family: Aaargh, sans-serif;
+        }
+
+        .nearest-concert-lk {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            text-decoration: none;
+            
+            color: #efeed9;
+        }
+
+        .concert-name {
+            font-size: 18px;
+            line-height: 30px;
+            
+            margin-bottom: 6px;
+            
+            color: #649900;
+        }
+        .place-logo {
+            float: left;
+            
+            margin-right: 20px;
+        }
+        
+        .concert-date {
+            margin-bottom: 13px;
+            
+            font-size: 24px;
+            line-height: 1.3;
+
+            color: #c9000c;
+        }
+        
+        .concert-date-num {
+            font-size: 36px;
+        }
+        
+        .concert-time {
+            font-size: 18px;
+            
+            color: #649900;
+        }
+    /* / concert */
+/* / header */
+    
+/* menu 
+*/ 
     .main-nav {
-        height: 50px;
+        height: 35px;
         
         text-align: right;
     }
@@ -154,27 +221,10 @@ p {
         color: #efeed9;
         text-decoration: none;
     }
-
-    .logo {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-            
-        display: block;
-        margin: 0 auto;
-
-        width: 580px;
-    }
-/* / header */
-    
-.afisha {
-    position:  absolute;
-    left: -169px;
-    top: -168px;
-    
-    opacity: 1;
-
-}
+    .main-nav a:last-child {
+        margin-right: 0;
+    }  
+/* / menu */
 
 /* footer with music
 */
@@ -234,35 +284,24 @@ p {
     }
 
     
-    /* main page*/
+    /* Main page
+    */
     
-    .greatings {
-        margin-top: 45px;
-        margin-bottom: 25px;
-        font-size: 16px;
-        line-height: 2;
+    .page-header-tx {
+        margin-top: 22px;
+        margin-bottom: 32px;
+        font-family: Aaargh, sans-serif;
+        font-size: 18px;
     }
     
     .main-photo {
-        width: 480px;
+       float: left;
+       
+       margin-right: 35px;
     }
     
-    .concert-date {
-        position: absolute;
-        top: 88px;
-        left: 90px;
-        
-        box-sizing: border-box;
-        width: 95px;
-        height: 95px;
-        padding-top: 17px;
-        
-        text-align: center;
-        font-size: 19px;
-        line-height: 1.3;
-        text-decoration: none;
-        
-        color: #c9000c;
-     /*   background-color: rgba(239, 238, 217, 0.8); */
-        
+    .main-info-tx {
+        line-height: 22px;
+        margin-bottom: 16px;
     }
+    
